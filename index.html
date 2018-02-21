@@ -1,0 +1,48 @@
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+</head>
+<body>
+<div>
+    <table id="tictactoe"></table>
+    <div class="control-panel">
+        <i class="icon-pause2" id="pausegame"></i>
+        <i class="icon-redo2"></i>
+    </div>
+
+    <div id="start">
+        <image src="images/1.svg" class="icon-image">
+            <button id="single" class="selection">Single player</button>
+            <button id="multi" class="selection">Multi player</button>
+    </div>
+    <div id="stop">
+        <div id="gameover">
+            <p class="over">Game Over</p>
+            <p id="winner">Player 1 won the game</p>
+            <div class="button-group">
+                <button id="newgame" class="pausecontrols control-buttons"><i class="icon-play3"></i></button>
+                <button id="exit" class="pausecontrols control-buttons"><i class="icon-arrow-left2"></i></button>
+            </div>
+        </div>
+        <div id="paused">
+            <p class="over">Paused</p>
+            <div class="button-group">
+                <button id="resumegame" class="pausecontrols control-buttons"><i class="icon-play3"></i> Resume</button>
+                <button id="exit" class="pausecontrols control-buttons"><i class="icon-arrow-left2"></i> Exit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/constants/index.js"></script>
+<script src="js/life-cycle/gameconfig.js"></script>
+<script src="js/life-cycle/builder.js"></script>
+<script src="js/life-cycle/life-cycle.js"></script>
+<script src="js/events/events.js"></script>
+
+</html>
